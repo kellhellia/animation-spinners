@@ -2,8 +2,8 @@
 
 .card {
 	background-color: rgba(197, 244, 163, 0.9);
-	height: 500px;
-	padding-top: 200px;
+	height: 100px;
+	padding-top: 30px;
 	width: 99%;
 	margin: 20px auto;
 	z-index: -1;
@@ -33,11 +33,22 @@
   		position: relative;
 	}
 
-	&__coub2 {
+	&__coub-spin {
 		width: 25px;
 		height: 25px;
-		border: 2px solid black;
-  		margin: -35px auto;
+		border: 2px solid white;
+  		margin: 8px auto;
+  		-webkit-animation: go 1s infinite linear;
+  		animation: go 1s infinite linear;
+  		z-index: 2;
+  		position: relative;
+	}
+
+	&__coub2 {
+		width: 30px;
+		height: 30px;
+		border: 2px solid white;
+  		margin: 5px auto; 
   		-webkit-animation: bounce 1s infinite;
   		animation: bounce 1s infinite;
   		z-index: 2;
@@ -53,6 +64,21 @@
   		margin: 0 auto;
   		z-index: 1;
 		position: relative;
+	}
+
+	&__circle-spinner {
+		width: 35px;
+		height: 35px;
+		background-color: transparent;
+		margin: 6px auto;
+		border: 3px solid;
+		border-radius: 100%;
+		border-right-color: rgba(255,255,255,0.5);
+		border-left-color: rgba(255,255,255,0.5);
+		border-bottom-color: rgba(255,255,255,0.5);
+		border-top-color: white;
+		-webkit-animation: rotat 1s infinite linear;
+  		animation: rotat 1s infinite linear;
 	}
 }
 
