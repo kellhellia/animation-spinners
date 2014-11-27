@@ -6294,19 +6294,16 @@ button.close {
   z-index: -1;
   position: relative;
 }
-.card__circle {
+.circle {
   width: 45px;
   height: 45px;
   border: 2px solid white;
-  /*border-bottom: 50px solid white;
-		border-left: 27px solid transparent;
-		border-right: 27px solid transparent;*/
   -webkit-animation: rotat 1s infinite linear;
   animation: rotat 1s infinite linear;
   margin: 0 auto;
   border-radius: 100px;
 }
-.card__coub {
+.coub {
   width: 25px;
   height: 25px;
   border: 2px solid white;
@@ -6316,7 +6313,7 @@ button.close {
   z-index: 2;
   position: relative;
 }
-.card__coub-spin {
+.coub-spin {
   width: 25px;
   height: 25px;
   border: 2px solid white;
@@ -6326,7 +6323,7 @@ button.close {
   z-index: 2;
   position: relative;
 }
-.card__coub2 {
+.coub2 {
   width: 30px;
   height: 30px;
   border: 2px solid white;
@@ -6336,17 +6333,25 @@ button.close {
   z-index: 2;
   position: relative;
 }
-.card__triangle {
+.triangle-container {
+  margin: 10 auto;
+  width: 100px;
+}
+.triangle {
   width: 0;
   height: 0;
-  border-bottom: 50px solid white;
-  border-left: 27px solid transparent;
-  border-right: 27px solid transparent;
+  border-bottom: 25px solid white;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
   margin: 0 auto;
   z-index: 1;
   position: relative;
+  float: left;
+  margin-left: 5px;
+  -webkit-animation: bounce 1s infinite;
+  animation: bounce 1s infinite;
 }
-.card__circle-spinner {
+.circle-spinner {
   width: 35px;
   height: 35px;
   background-color: transparent;
@@ -6359,6 +6364,34 @@ button.close {
   border-top-color: white;
   -webkit-animation: rotat 1s infinite linear;
   animation: rotat 1s infinite linear;
+}
+.circle-container {
+  margin: 10 auto;
+  width: 60px;
+}
+.circle-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: white;
+  float: left;
+  -webkit-animation: bounce 1s infinite;
+  animation: bounce 1s infinite;
+}
+.delay2 {
+  -webkit-animation-delay: 0.2s;
+  /* Chrome, Safari, Opera */
+  animation-delay: 0.2s;
+}
+.delay3 {
+  -webkit-animation-delay: 0.3s;
+  /* Chrome, Safari, Opera */
+  animation-delay: 0.3s;
+}
+.delay4 {
+  -webkit-animation-delay: 0.4s;
+  /* Chrome, Safari, Opera */
+  animation-delay: 0.4s;
 }
 @-webkit-keyframes rotat {
   100% {
